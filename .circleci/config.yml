@@ -1,0 +1,18 @@
+version: 2
+#notify:
+  #webhooks:
+    # Custom webhook, to receive CircleCI build status (using dummy URL as example)
+    #- url: https://webhook.com?type=circleci
+jobs:
+  validate:
+    machine: true
+    working_directory: ~/flinks-api
+    steps:
+      - checkout
+      - run: docker-compose up -d
+      - run: docker-compose exec flinks-api composer install
+workflows:
+  version: 2
+  validate:
+    jobs:
+       - validate

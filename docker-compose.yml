@@ -1,0 +1,46 @@
+version : "3"
+services:
+  flinks-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flinks-api
+    depends_on:
+      - flinks-pg
+    volumes:
+      - .:/var/www/html
+    environment:
+      APP_NAME: 'F&L | Links'
+      APP_ENV: 'local'
+      APP_DEBUG: 'true'
+      APP_URL: 'http://220.131.1.1'
+      DB_CONNECTION: 'pgsql'
+      SENTRY_DSN: ''
+    networks:
+      flinks-api-network:
+        ipv4_address: 220.131.1.1
+
+  flinks-pg:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: test_db
+    container_name: flinks-pg
+    volumes:
+      - flinks-pg-disk:/var/lib/postgres
+    networks:
+      flinks-api-network:
+        ipv4_address: 220.131.1.2
+
+
+# On-disk storage of DB data, when containers are stopped/removed
+volumes:
+  flinks-pg-disk: {}
+
+# Local network for services running using this docker-compose config
+networks:
+  flinks-api-network:
+    ipam:
+      driver: default
+      config:
+        - subnet: 220.131.0.0/16

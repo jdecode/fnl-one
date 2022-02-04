@@ -7,6 +7,12 @@
 
         <title inertia>{{ config('app.name', 'Laravel') }}</title>
 
+        <script>
+            if (localStorage.dark !== 'undefined' && localStorage.dark && localStorage.dark === 'true') {
+                document.documentElement.classList.add('dark');
+                localStorage.dark = true;
+            }
+        </script>
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 

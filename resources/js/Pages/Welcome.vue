@@ -4,18 +4,23 @@
         <li
             v-for="flink in flinks"
             :key="flink.name"
-            class="col-span-1 shadow divide-y divide-gray-200 dark:bg-gray-800 bg-no-repeat bg-right bg-contain"
+            class="
+                col-span-1 shadow p-2
+                dark:bg-gray-800 bg-no-repeat bg-right bg-contain bg-origin-content
+                border border-2 border-dashed border-gray-500 dark:border-gray-400
+                "
             :class="flink.classes"
             :style="`background-image: url('${flink.logo}')`"
             >
-            <div class="w-full flex items-center justify-between p-6 space-x-6">
-                <div class="flex-1 truncate">
-                    <div class="flex items-center space-x-3">
-                        <h3 class="text-gray-900 dark:text-gray-200 text-sm font-medium truncate">{{ flink.name }}</h3>
+            <a :href="flink.url" target="_blank">
+                <div class="w-full flex items-center justify-between p-6 space-x-6">
+                    <div class="flex-1 truncate">
+                        <div class="flex items-center space-x-3">
+                            <h3 class="text-gray-900 dark:text-gray-200 text-sm font-medium truncate content-center">{{ flink.name }}</h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-<!--            <img class="h-12 bg-gray-300 flex-shrink-0 dark:bg-gray-400" :src="" alt="" />-->
+            </a>
         </li>
     </ul>
 </template>
@@ -25,12 +30,22 @@
 const flinks = [
     {
         name: 'Heroku',
-        tag: 'DevOps',
-        classes: 'bg-purple-300 dark:bg-purple-500',
+        classes: 'bg-purple-300 dark:bg-purple-500 bg-blend-multiply',
         url: 'https://dashboard.heroku.com',
-        logo: '/images/heroku-logo.png',
+        logo: '/images/heroku-logo-white.png',
     },
-    // More people...
+    {
+        name: 'GitHub.com/F+L',
+        classes: 'bg-gray-300 dark:bg-gray-500',
+        url: 'https://github.com/founderandlightning',
+        logo: '/images/github-logo.png',
+    },
+    {
+        name: 'Reviewee',
+        classes: 'bg-orange-200 dark:bg-orange-400',
+        url: 'https://app.reviewee.it',
+        logo: '/images/reviewee-logo.png',
+    }
 ]
 
 export default {

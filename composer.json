@@ -58,8 +58,7 @@
             "php artisan key:generate --env=testing"
         ],
         "tests": [
-            "@pre-commit",
-            "@pre-push"
+            "@pre-commit"
         ],
         "pre-commit": [
             "@composer run parallel-lint",

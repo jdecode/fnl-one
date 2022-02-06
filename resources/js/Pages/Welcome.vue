@@ -16,7 +16,7 @@
                 <div class="w-full flex items-center justify-between p-6 space-x-6">
                     <div class="flex-1 truncate">
                         <div class="flex items-center space-x-3">
-                            <h3 class="text-gray-900 dark:text-gray-200 text-sm font-medium truncate content-center">{{ flink.name }}</h3>
+                            <h3 class="text-gray-900 dark:text-gray-200 text-lg font-medium truncate content-center">{{ flink.name }}</h3>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ const flinks = [
     },
     {
         name: 'Reviewee',
-        classes: 'bg-orange-200 dark:bg-orange-400',
+        classes: 'bg-orange-200 dark:bg-orange-600',
         url: 'https://app.reviewee.it',
         logo: '/images/reviewee-logo.png',
     }

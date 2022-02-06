@@ -8,7 +8,7 @@ COPY . /var/www/html
 
 # Setup
 RUN composer install -n --prefer-dist
-RUN chmod -R 0777 storage bootstrap
+RUN chmod -R 0777 storage bootstrap public
 
 RUN npm install
 RUN npm run prod

@@ -70,6 +70,12 @@ const flinks = [
         url: 'https://console.cloud.google.com/home/dashboard',
         logo: '/images/gcp-logo.png',
     },
+    {
+        name: 'Rollbar',
+        classes: 'bg-blue-200 dark:bg-blue-900',
+        url: 'https://rollbar.com/',
+        logo: '/images/rollbar-logo.png',
+    }
 ]
 
 export default {

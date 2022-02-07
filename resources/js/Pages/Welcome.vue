@@ -29,13 +29,13 @@
 
 const flinks = [
     {
-        name: 'Heroku',
+        name: 'Heroku Dashboard',
         classes: 'bg-purple-300 dark:bg-purple-500 bg-blend-multiply',
         url: 'https://dashboard.heroku.com',
         logo: '/images/heroku-logo-white.png',
     },
     {
-        name: 'GitHub.com/F+L',
+        name: 'GitHub: F+L',
         classes: 'bg-gray-300 dark:bg-gray-500',
         url: 'https://github.com/founderandlightning',
         logo: '/images/github-logo.png',
@@ -45,7 +45,31 @@ const flinks = [
         classes: 'bg-orange-200 dark:bg-orange-600',
         url: 'https://app.reviewee.it',
         logo: '/images/reviewee-logo.png',
-    }
+    },
+    {
+        name: 'GitHub: Coding Guidelines',
+        classes: 'bg-gray-300 dark:bg-gray-500',
+        url: 'https://github.com/founderandlightning/coding-guidelines/',
+        logo: '/images/github-logo.png',
+    },
+    {
+        name: 'Circle CI Dashboard',
+        classes: 'bg-green-300 dark:bg-green-700 bg-blend-multiply',
+        url: 'https://app.circleci.com/',
+        logo: '/images/circleci-logo.jpg',
+    },
+    {
+        name: 'AWS Console',
+        classes: 'bg-orange-300 dark:bg-orange-500 bg-blend-multiply',
+        url: 'https://console.aws.amazon.com/console/home',
+        logo: '/images/aws-logo.png',
+    },
+    {
+        name: 'GCP Console',
+        classes: 'bg-blue-300 dark:bg-blue-700',
+        url: 'https://console.cloud.google.com/home/dashboard',
+        logo: '/images/gcp-logo.png',
+    },
 ]
 
 export default {

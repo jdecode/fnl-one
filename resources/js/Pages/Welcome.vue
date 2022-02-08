@@ -78,7 +78,7 @@ const flinks = [
     },
     {
         name: 'Landing Page Boilerplate',
-        classes: 'bg-pink-300 dark:bg-pink-500',
+        classes: 'bg-pink-300 dark:bg-pink-700',
         url: 'https://github.com/founderandlightning/landing-page-boilerplate',
         logo: '/images/figma-logo.png',
     },
@@ -90,9 +90,15 @@ const flinks = [
     },
     {
         name: 'Node TS Boilerplate',
-        classes: 'bg-blue-300 dark:bg-blue-800 bg-blend-multiply',
+        classes: 'bg-green-200 dark:bg-green-500',
         url: 'https://github.com/founderandlightning/fl-node-ts-boilerplate',
         logo: '/images/node-js-logo.png',
+    },
+    {
+        name: 'React Boilerplate',
+        classes: 'bg-cyan-200 dark:bg-cyan-700',
+        url: 'https://github.com/founderandlightning/react-boilerplate',
+        logo: '/images/react-logo.png',
     },
 ]
 

@@ -47,7 +47,7 @@ const flinks = [
         logo: '/images/reviewee-logo.png',
     },
     {
-        name: 'GitHub: Coding Guidelines',
+        name: 'Coding Guidelines',
         classes: 'bg-gray-300 dark:bg-gray-500',
         url: 'https://github.com/founderandlightning/coding-guidelines/',
         logo: '/images/github-logo.png',
@@ -75,7 +75,25 @@ const flinks = [
         classes: 'bg-blue-200 dark:bg-blue-900',
         url: 'https://rollbar.com/',
         logo: '/images/rollbar-logo.png',
-    }
+    },
+    {
+        name: 'Landing Page Boilerplate',
+        classes: 'bg-pink-300 dark:bg-pink-500',
+        url: 'https://github.com/founderandlightning/landing-page-boilerplate',
+        logo: '/images/figma-logo.png',
+    },
+    {
+        name: 'Laravel Boilerplate',
+        classes: 'bg-red-300 dark:bg-red-400',
+        url: 'https://github.com/founderandlightning/fl-laravel_boilerplate',
+        logo: '/images/laravel-logo.png',
+    },
+    {
+        name: 'Node TS Boilerplate',
+        classes: 'bg-blue-300 dark:bg-blue-800 bg-blend-multiply',
+        url: 'https://github.com/founderandlightning/fl-node-ts-boilerplate',
+        logo: '/images/node-js-logo.png',
+    },
 ]
 
 export default {
